@@ -89,7 +89,7 @@ function sumArray(testArray) { //eslint-disable-line
   var sum1 = sum(a,b)[0];
   var sum2 = sum(sum1,c)[0];
   //create message and return
-  var arrayMessage = `${testArray} was passed in as an array of numbers, and ${sum2} is their sum.`
+  var arrayMessage = `${testArray} was passed in as an array of numbers, and ${sum2} is their sum.`;
   return[sum2, arrayMessage];
 }
 
@@ -109,13 +109,23 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
+var multArr = [2, 3, 4];
 
 function multiplyArray(multArr) { //eslint-disable-line
-  // TODO: Write your code here
+  // create variables for numbers in string
+  var a = multArr[0];
+  var b = multArr[1];
+  var c = multArr[2];
+  // multiply numbers from string
+  var product1 = multiply(a, b)[0];
+  var product2 = multiply(product1, c)[0];
+  // create message and return
+  var multArrayMessage = `The numbers ${multArr} have a product of ${product2}.`;
+  return[product2, multArrayMessage];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
